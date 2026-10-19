@@ -1,0 +1,71 @@
+.art {
+  flex: 1 1 420px;
+  min-width: 0;
+  height: 440px;
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.slab {
+  flex: 0 0 28%;
+  height: 100%;
+  background: var(--cobalt);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 28px;
+}
+
+.slabArch {
+  width: 60%;
+  height: 150px;
+  background: var(--spark);
+  border-radius: var(--radius-full) var(--radius-full) 0 0;
+}
+
+.arch {
+  flex: 0 0 32%;
+  height: 72%;
+  background: var(--sky);
+  border-radius: var(--radius-full) var(--radius-full) 0 0;
+}
+
+.panel {
+  flex: 1 1 auto;
+  height: 86%;
+  background: var(--surface-inverse);
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  padding: var(--space-6);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: end;
+  gap: 20px 14px;
+}
+
+.dot {
+  height: 44px;
+  background: var(--spark);
+  border-radius: var(--radius-full) var(--radius-full) 0 0;
+}
+
+@media (max-width: 600px) {
+  .art {
+    height: 300px;
+  }
+
+  .slabArch {
+    height: 100px;
+  }
+
+  .panel {
+    padding: var(--space-3);
+    gap: var(--space-2) 6px;
+  }
+
+  .dot {
+    height: 28px;
+  }
+}

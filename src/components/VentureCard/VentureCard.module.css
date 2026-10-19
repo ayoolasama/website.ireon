@@ -1,0 +1,80 @@
+.card {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  color: var(--ink);
+  text-decoration: none;
+  height: 100%;
+}
+
+a.card {
+  transition:
+    box-shadow 150ms ease-out,
+    border-color 150ms ease-out;
+}
+
+a.card:hover {
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--line-strong);
+}
+
+.monogram {
+  flex: none;
+  width: 48px;
+  height: 56px;
+  border-radius: 24px 24px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.roots {
+  background: var(--sky);
+  color: var(--on-sky);
+}
+
+.signal {
+  background: var(--spark);
+  color: var(--on-spark);
+}
+
+.body {
+  display: grid;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sector {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--ink-muted);
+}
+
+.summary {
+  margin-top: var(--space-1);
+  font-size: 14px;
+  line-height: 20px;
+}

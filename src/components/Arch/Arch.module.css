@@ -1,0 +1,22 @@
+.arch {
+  display: block;
+  flex: none;
+  border-radius: var(--radius-full) var(--radius-full) 0 0;
+}
+
+.cobalt {
+  background: var(--cobalt);
+}
+
+.sky {
+  background: var(--sky);
+}
+
+.navy {
+  background: var(--surface-inverse);
+}
+
+.spark {
+  background: var(--spark);
+  box-shadow: inset 0 0 0 1px #0e122222;
+}

@@ -1,0 +1,29 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 640px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cobalt);
+}
+
+.title {
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+}

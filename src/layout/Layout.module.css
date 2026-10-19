@@ -1,0 +1,137 @@
+.skip {
+  position: absolute;
+  left: var(--space-4);
+  top: -100px;
+  z-index: 10;
+  background: var(--cobalt);
+  color: var(--on-cobalt);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: var(--space-4);
+  color: var(--on-cobalt);
+}
+
+.main:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-8);
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-6);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.wordmark:hover {
+  color: var(--ink);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) 28px;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  padding-block: var(--space-2);
+}
+
+.navLink:hover {
+  color: var(--cobalt);
+}
+
+.navLink[aria-current='page'] {
+  color: var(--cobalt);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--line);
+  margin-top: var(--space-24);
+}
+
+.footerInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  justify-content: space-between;
+  padding-block: var(--space-12);
+}
+
+.footerBrand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1 1 280px;
+}
+
+.footerTagline {
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+
+.footerNav,
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footerNav {
+  flex: 0 1 180px;
+}
+
+.footerContact {
+  flex: 0 1 260px;
+  color: var(--ink-muted);
+}
+
+.footerNav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.footerContact a {
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+.footerNav a:hover,
+.footerContact a:hover {
+  color: var(--cobalt);
+  text-decoration: underline;
+}
+
+.legal {
+  padding-bottom: var(--space-8);
+  font-size: 12px;
+  color: var(--ink-muted);
+}

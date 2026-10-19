@@ -1,0 +1,100 @@
+/*
+ * Ireon Ventures design tokens — Cobalt & Lime.
+ * Source of truth: the Ireon Ventures design system (tokens.json). Keep values in sync with it;
+ * components reference these custom properties only, never raw hex values.
+ */
+:root,
+[data-theme='light'] {
+  --surface: #f6f7fb;
+  --surface-raised: #ffffff;
+  --surface-sunken: #eceff6;
+  --surface-inverse: #0e1222;
+  --line: #dde1ec;
+  --line-strong: #7e849b;
+  --ink: #0e1222;
+  --ink-muted: #4a5168;
+  --on-inverse: #f6f7fb;
+  --on-inverse-muted: #c3c8d8;
+
+  --cobalt: #2b4bff;
+  --cobalt-hover: #1a35d6;
+  --cobalt-soft: #e6ebff;
+  --on-cobalt: #ffffff;
+  --sky: #9db4ff;
+  --on-sky: #0e1222;
+  --spark: #d4f25a;
+  --on-spark: #0e1222;
+
+  --success: #17723f;
+  --success-soft: #dff5e8;
+  --warning: #8a5300;
+  --warning-soft: #fcefd2;
+  --danger: #b42318;
+  --danger-soft: #fde6e2;
+  --info: #1c5a8c;
+  --info-soft: #e0ecf7;
+  --link: var(--cobalt);
+
+  --shadow-sm: 0 1px 2px #0e12220d, 0 1px 3px #0e122214;
+  --shadow-lg: 0 6px 12px #0e122212, 0 18px 40px -6px #0e122229;
+  --focus-ring: 0 0 0 2px #f6f7fb, 0 0 0 4px #2b4bff;
+}
+
+[data-theme='dark'] {
+  --surface: #0b0e1a;
+  --surface-raised: #141829;
+  --surface-sunken: #070910;
+  --surface-inverse: #f1f3f9;
+  --line: #252a3e;
+  --line-strong: #6e7590;
+  --ink: #f1f3f9;
+  --ink-muted: #a9afc4;
+  --on-inverse: #0b0e1a;
+  --on-inverse-muted: #4a5168;
+
+  --cobalt: #7d95ff;
+  --cobalt-hover: #9aadff;
+  --cobalt-soft: #1a2250;
+  --on-cobalt: #0b0e1a;
+  --sky: #9db4ff;
+  --on-sky: #0e1222;
+  --spark: #d4f25a;
+  --on-spark: #0e1222;
+
+  --success: #5fd39a;
+  --success-soft: #0f2a1d;
+  --warning: #f0be4f;
+  --warning-soft: #33260a;
+  --danger: #ff8b7b;
+  --danger-soft: #3a1511;
+  --info: #8cc0ef;
+  --info-soft: #0e2236;
+
+  --shadow-sm: 0 1px 3px #000000a6;
+  --shadow-lg: 0 18px 40px -6px #000000cc;
+  --focus-ring: 0 0 0 2px #0b0e1a, 0 0 0 4px #7d95ff;
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --font-display: 'Bricolage Grotesque', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --content-max: 1200px;
+  --gutter: var(--space-6);
+}
