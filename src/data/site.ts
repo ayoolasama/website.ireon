@@ -21,11 +21,11 @@ export interface NavItem {
 
 export const primaryNav: NavItem[] = [
   { label: 'How we work', to: '/how-we-work' },
-  { label: 'Ventures', to: '/ventures' },
+  // { label: 'Ventures', to: '/ventures' },
 ];
 
 export const footerNav: NavItem[] = [
   { label: 'How we work', to: '/how-we-work' },
-  { label: 'Ventures', to: '/ventures' },
+  // { label: 'Ventures', to: '/ventures' },
   { label: 'Contact', to: '/contact' },
 ];
